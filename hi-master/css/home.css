@@ -1,28 +1,28 @@
 
+
 html{
-    margin:0px;
-    overflow-x: hidden;
-    max-width: 100%;
-    background-image: url("https://imgur.com/JRk5ftw.gif");
-    background: #110101;
-    background-repeat: repeat-y;
-    background-size: contain;
-    background-position: center;
-    backface-visibility: visible;
+  margin:0px;
+  overflow-x: hidden;
+  max-width: 100%;
+  background: #110101;
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-position: center;
+  backface-visibility: visible;
 }
 
 body
 {
-height: 100%;
+  height: 100%;
 }
 
 nav{
-    text-align: center;
-    padding: 5vh 30px 40px;
-    width: 100%;
-    margin-top: 0px;
-    margin-left: -40px;
-    background-color: rgba(167, 0, 167, 0.3);
+  text-align: center;
+  padding: 5vh 30px 40px;
+  width: 100%;
+  margin-top: 0px;
+  margin-left: -40px;
+  background-color: rgba(167, 0, 167, 0.3);
 }
 
 ul{
@@ -30,59 +30,59 @@ ul{
 }
 
 nav ul li{
-    display: inline-block;
-    padding-right: 5vw;
-    padding-left: 1vw;
-    color: white;
-    flex: 1;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: 'Noto Sans', sans-serif;
+  display: inline-block;
+  padding-right: 5vw;
+  padding-left: 1vw;
+  color: white;
+  flex: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 nav ul li a:link{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 nav ul li a:visited{
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 nav ul li a:hover{
-    color: white;
-    border: white 1px solid;
+  color: white;
+  border: white 1px solid;
 }
 
 nav ul li a:active{
-    color: white;
+  color: white;
 }
 
 
 
 #logo {
-    border-radius: 1px;
-    margin: 0px auto;
-    width: 25vw;
-    height: auto;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  border-radius: 1px;
+  margin: 0px auto;
+  width: 25vw;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
 
 }
 
 
 .grid-item {
-      justify-content: center;
-      align-self: center;
-      text-align: center;
- }
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-gap: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 40px 20px;
 }
 
 
@@ -97,4 +97,56 @@ nav ul li a:active{
   padding: 2px 10px 70px 50px;
   background: #110101;
   background-size:contain;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.about{
+  padding: 10px 0px 10px;
+}
+
+.one{
+  float: left;
+}
+
+.two{
+  float: right;
 }
