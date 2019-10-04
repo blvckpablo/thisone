@@ -154,7 +154,7 @@ nav ul li a:active{
 }
 
 .two{
-  float: lefts;
+  float: left;
   flex: 1;
   margin-left: 10px;
 }
