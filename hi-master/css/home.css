@@ -102,9 +102,11 @@ nav ul li a:active{
 
 .flip-card {
   background-color: transparent;
-  width: 45vw;
-  height: 45vh;
+  width: 20vw;
+  height: 35vh;
   perspective: 1000px;
+  padding-top: 10px;
+  align-self: center;
 
 }
 
@@ -116,6 +118,7 @@ nav ul li a:active{
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  clip-path: circle(100px at center);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -145,16 +148,13 @@ nav ul li a:active{
   clear: both;
   display: flex;
   align-content: center;
+  align-self: center;
+  margin: 0px 40px 23vh 6vw;
 }
 
 .one{
   float: left;
   flex: 1;
   margin-left: 10px;
-}
 
-.two{
-  float: left;
-  flex: 1;
-  margin-left: 10px;
 }
